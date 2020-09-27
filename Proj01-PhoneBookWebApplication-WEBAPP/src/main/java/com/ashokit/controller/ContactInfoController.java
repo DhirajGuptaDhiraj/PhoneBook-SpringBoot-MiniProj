@@ -22,6 +22,7 @@ public class ContactInfoController{
 	@GetMapping("/")
  public String loadContactFrom(Model model) { // to load the form
 		Contact contactObj = new Contact();
+	 System.out.println("hello dhiraj");
 		model.addAttribute("contact", contactObj); 
 		return "index";    
 	
